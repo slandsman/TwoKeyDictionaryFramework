@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TwoKeyDictionaryFramework' target in the 'TwoKeyDictionaryFramework' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
