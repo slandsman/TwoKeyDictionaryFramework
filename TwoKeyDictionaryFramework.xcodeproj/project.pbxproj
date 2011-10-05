@@ -7,141 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D8A5CFF1438DA47003824A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8A5CFE1438DA47003824A8 /* Cocoa.framework */; };
-		5D8A5D091438DA47003824A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8A5D071438DA47003824A8 /* InfoPlist.strings */; };
-		5D8A5D0D1438DA47003824A8 /* TwoKeyDictionaryFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8A5D0C1438DA47003824A8 /* TwoKeyDictionaryFramework.m */; };
-		5D8A5D151438DA47003824A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8A5D141438DA47003824A8 /* SenTestingKit.framework */; };
-		5D8A5D161438DA47003824A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8A5CFE1438DA47003824A8 /* Cocoa.framework */; };
-		5D8A5D191438DA47003824A8 /* TwoKeyDictionaryFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8A5CFB1438DA47003824A8 /* TwoKeyDictionaryFramework.framework */; };
-		5D8A5D1F1438DA47003824A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8A5D1D1438DA47003824A8 /* InfoPlist.strings */; };
-		5D8A5D221438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8A5D211438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.m */; };
+		5D171D11143CD0690020BFF8 /* TwoKeyMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D171D0D143CD0690020BFF8 /* TwoKeyMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D171D12143CD0690020BFF8 /* TwoKeyMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D171D0E143CD0690020BFF8 /* TwoKeyMutableDictionary.m */; };
+		5D171D16143CD2670020BFF8 /* TwoKeyDictionaryFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D171D14143CD2670020BFF8 /* TwoKeyDictionaryFramework.h */; };
+		5D171D17143CD2670020BFF8 /* TwoKeyDictionaryFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D171D15143CD2670020BFF8 /* TwoKeyDictionaryFramework.m */; };
+		5D1C4E041438DFBF009141FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1C4E031438DFBF009141FE /* Cocoa.framework */; };
+		5D1C4E0E1438DFBF009141FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C4E0C1438DFBF009141FE /* InfoPlist.strings */; };
+		5D1C4E1A1438DFBF009141FE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1C4E191438DFBF009141FE /* SenTestingKit.framework */; };
+		5D1C4E1B1438DFBF009141FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1C4E031438DFBF009141FE /* Cocoa.framework */; };
+		5D1C4E1E1438DFBF009141FE /* TwoKeyDictionaryFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1C4E001438DFBF009141FE /* TwoKeyDictionaryFramework.framework */; };
+		5D1C4E241438DFBF009141FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C4E221438DFBF009141FE /* InfoPlist.strings */; };
+		5D1C4E271438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C4E261438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D8A5D171438DA47003824A8 /* PBXContainerItemProxy */ = {
+		5D1C4E1C1438DFBF009141FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D8A5CF11438DA47003824A8 /* Project object */;
+			containerPortal = 5D1C4DF61438DFBF009141FE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D8A5CFA1438DA47003824A8;
+			remoteGlobalIDString = 5D1C4DFF1438DFBF009141FE;
 			remoteInfo = TwoKeyDictionaryFramework;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D8A5CFB1438DA47003824A8 /* TwoKeyDictionaryFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwoKeyDictionaryFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D8A5CFE1438DA47003824A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		5D8A5D011438DA47003824A8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		5D8A5D021438DA47003824A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		5D8A5D031438DA47003824A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5D8A5D061438DA47003824A8 /* TwoKeyDictionaryFramework-Info.plist */ = {isa = PBXFileReference; path = "TwoKeyDictionaryFramework-Info.plist"; sourceTree = "<group>"; };
-		5D8A5D081438DA47003824A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D8A5D0A1438DA47003824A8 /* TwoKeyDictionaryFramework-Prefix.pch */ = {isa = PBXFileReference; path = "TwoKeyDictionaryFramework-Prefix.pch"; sourceTree = "<group>"; };
-		5D8A5D0B1438DA47003824A8 /* TwoKeyDictionaryFramework.h */ = {isa = PBXFileReference; path = TwoKeyDictionaryFramework.h; sourceTree = "<group>"; };
-		5D8A5D0C1438DA47003824A8 /* TwoKeyDictionaryFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryFramework.m; sourceTree = "<group>"; };
-		5D8A5D131438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoKeyDictionaryFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D8A5D141438DA47003824A8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5D8A5D1C1438DA47003824A8 /* TwoKeyDictionaryFrameworkTests-Info.plist */ = {isa = PBXFileReference; path = "TwoKeyDictionaryFrameworkTests-Info.plist"; sourceTree = "<group>"; };
-		5D8A5D1E1438DA47003824A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D8A5D201438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.h */ = {isa = PBXFileReference; path = TwoKeyDictionaryFrameworkTests.h; sourceTree = "<group>"; };
-		5D8A5D211438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryFrameworkTests.m; sourceTree = "<group>"; };
+		5D171D0D143CD0690020BFF8 /* TwoKeyMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyMutableDictionary.h; sourceTree = "<group>"; };
+		5D171D0E143CD0690020BFF8 /* TwoKeyMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyMutableDictionary.m; sourceTree = "<group>"; };
+		5D171D14143CD2670020BFF8 /* TwoKeyDictionaryFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyDictionaryFramework.h; sourceTree = "<group>"; };
+		5D171D15143CD2670020BFF8 /* TwoKeyDictionaryFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryFramework.m; sourceTree = "<group>"; };
+		5D1C4E001438DFBF009141FE /* TwoKeyDictionaryFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwoKeyDictionaryFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1C4E031438DFBF009141FE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5D1C4E061438DFBF009141FE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5D1C4E071438DFBF009141FE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5D1C4E081438DFBF009141FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D1C4E0B1438DFBF009141FE /* TwoKeyDictionaryFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwoKeyDictionaryFramework-Info.plist"; sourceTree = "<group>"; };
+		5D1C4E0D1438DFBF009141FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D1C4E0F1438DFBF009141FE /* TwoKeyDictionaryFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwoKeyDictionaryFramework-Prefix.pch"; sourceTree = "<group>"; };
+		5D1C4E181438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoKeyDictionaryFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1C4E191438DFBF009141FE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5D1C4E211438DFBF009141FE /* TwoKeyDictionaryFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwoKeyDictionaryFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		5D1C4E231438DFBF009141FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D1C4E251438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoKeyDictionaryFrameworkTests.h; sourceTree = "<group>"; };
+		5D1C4E261438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryFrameworkTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D8A5CF71438DA47003824A8 /* Frameworks */ = {
+		5D1C4DFC1438DFBF009141FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8A5CFF1438DA47003824A8 /* Cocoa.framework in Frameworks */,
+				5D1C4E041438DFBF009141FE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D8A5D0F1438DA47003824A8 /* Frameworks */ = {
+		5D1C4E141438DFBF009141FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8A5D151438DA47003824A8 /* SenTestingKit.framework in Frameworks */,
-				5D8A5D161438DA47003824A8 /* Cocoa.framework in Frameworks */,
-				5D8A5D191438DA47003824A8 /* TwoKeyDictionaryFramework.framework in Frameworks */,
+				5D1C4E1A1438DFBF009141FE /* SenTestingKit.framework in Frameworks */,
+				5D1C4E1B1438DFBF009141FE /* Cocoa.framework in Frameworks */,
+				5D1C4E1E1438DFBF009141FE /* TwoKeyDictionaryFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D8A5CEF1438DA47003824A8 = {
+		5D1C4DF41438DFBF009141FE = {
 			isa = PBXGroup;
 			children = (
-				5D8A5D041438DA47003824A8 /* TwoKeyDictionaryFramework */,
-				5D8A5D1A1438DA47003824A8 /* TwoKeyDictionaryFrameworkTests */,
-				5D8A5CFD1438DA47003824A8 /* Frameworks */,
-				5D8A5CFC1438DA47003824A8 /* Products */,
+				5D1C4E091438DFBF009141FE /* TwoKeyDictionaryFramework */,
+				5D1C4E1F1438DFBF009141FE /* TwoKeyDictionaryFrameworkTests */,
+				5D1C4E021438DFBF009141FE /* Frameworks */,
+				5D1C4E011438DFBF009141FE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5D8A5CFC1438DA47003824A8 /* Products */ = {
+		5D1C4E011438DFBF009141FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D8A5CFB1438DA47003824A8 /* TwoKeyDictionaryFramework.framework */,
-				5D8A5D131438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.octest */,
+				5D1C4E001438DFBF009141FE /* TwoKeyDictionaryFramework.framework */,
+				5D1C4E181438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D8A5CFD1438DA47003824A8 /* Frameworks */ = {
+		5D1C4E021438DFBF009141FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D8A5CFE1438DA47003824A8 /* Cocoa.framework */,
-				5D8A5D141438DA47003824A8 /* SenTestingKit.framework */,
-				5D8A5D001438DA47003824A8 /* Other Frameworks */,
+				5D1C4E031438DFBF009141FE /* Cocoa.framework */,
+				5D1C4E191438DFBF009141FE /* SenTestingKit.framework */,
+				5D1C4E051438DFBF009141FE /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5D8A5D001438DA47003824A8 /* Other Frameworks */ = {
+		5D1C4E051438DFBF009141FE /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D8A5D011438DA47003824A8 /* AppKit.framework */,
-				5D8A5D021438DA47003824A8 /* CoreData.framework */,
-				5D8A5D031438DA47003824A8 /* Foundation.framework */,
+				5D1C4E061438DFBF009141FE /* AppKit.framework */,
+				5D1C4E071438DFBF009141FE /* CoreData.framework */,
+				5D1C4E081438DFBF009141FE /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		5D8A5D041438DA47003824A8 /* TwoKeyDictionaryFramework */ = {
+		5D1C4E091438DFBF009141FE /* TwoKeyDictionaryFramework */ = {
 			isa = PBXGroup;
 			children = (
-				5D8A5D0B1438DA47003824A8 /* TwoKeyDictionaryFramework.h */,
-				5D8A5D0C1438DA47003824A8 /* TwoKeyDictionaryFramework.m */,
-				5D8A5D051438DA47003824A8 /* Supporting Files */,
+				5D171D14143CD2670020BFF8 /* TwoKeyDictionaryFramework.h */,
+				5D171D15143CD2670020BFF8 /* TwoKeyDictionaryFramework.m */,
+				5D171D0D143CD0690020BFF8 /* TwoKeyMutableDictionary.h */,
+				5D171D0E143CD0690020BFF8 /* TwoKeyMutableDictionary.m */,
+				5D1C4E0A1438DFBF009141FE /* Supporting Files */,
 			);
 			path = TwoKeyDictionaryFramework;
 			sourceTree = "<group>";
 		};
-		5D8A5D051438DA47003824A8 /* Supporting Files */ = {
+		5D1C4E0A1438DFBF009141FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5D8A5D061438DA47003824A8 /* TwoKeyDictionaryFramework-Info.plist */,
-				5D8A5D071438DA47003824A8 /* InfoPlist.strings */,
-				5D8A5D0A1438DA47003824A8 /* TwoKeyDictionaryFramework-Prefix.pch */,
+				5D1C4E0B1438DFBF009141FE /* TwoKeyDictionaryFramework-Info.plist */,
+				5D1C4E0C1438DFBF009141FE /* InfoPlist.strings */,
+				5D1C4E0F1438DFBF009141FE /* TwoKeyDictionaryFramework-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D8A5D1A1438DA47003824A8 /* TwoKeyDictionaryFrameworkTests */ = {
+		5D1C4E1F1438DFBF009141FE /* TwoKeyDictionaryFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D8A5D201438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.h */,
-				5D8A5D211438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.m */,
-				5D8A5D1B1438DA47003824A8 /* Supporting Files */,
+				5D1C4E251438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.h */,
+				5D1C4E261438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m */,
+				5D1C4E201438DFBF009141FE /* Supporting Files */,
 			);
 			path = TwoKeyDictionaryFrameworkTests;
 			sourceTree = "<group>";
 		};
-		5D8A5D1B1438DA47003824A8 /* Supporting Files */ = {
+		5D1C4E201438DFBF009141FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5D8A5D1C1438DA47003824A8 /* TwoKeyDictionaryFrameworkTests-Info.plist */,
-				5D8A5D1D1438DA47003824A8 /* InfoPlist.strings */,
+				5D1C4E211438DFBF009141FE /* TwoKeyDictionaryFrameworkTests-Info.plist */,
+				5D1C4E221438DFBF009141FE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,24 +156,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5D8A5CF81438DA47003824A8 /* Headers */ = {
+		5D1C4DFD1438DFBF009141FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D171D11143CD0690020BFF8 /* TwoKeyMutableDictionary.h in Headers */,
+				5D171D16143CD2670020BFF8 /* TwoKeyDictionaryFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5D8A5CFA1438DA47003824A8 /* TwoKeyDictionaryFramework */ = {
+		5D1C4DFF1438DFBF009141FE /* TwoKeyDictionaryFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D8A5D251438DA47003824A8 /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFramework" */;
+			buildConfigurationList = 5D1C4E2A1438DFBF009141FE /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFramework" */;
 			buildPhases = (
-				5D8A5CF61438DA47003824A8 /* Sources */,
-				5D8A5CF71438DA47003824A8 /* Frameworks */,
-				5D8A5CF81438DA47003824A8 /* Headers */,
-				5D8A5CF91438DA47003824A8 /* Resources */,
+				5D1C4DFB1438DFBF009141FE /* Sources */,
+				5D1C4DFC1438DFBF009141FE /* Frameworks */,
+				5D1C4DFD1438DFBF009141FE /* Headers */,
+				5D1C4DFE1438DFBF009141FE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -174,76 +183,76 @@
 			);
 			name = TwoKeyDictionaryFramework;
 			productName = TwoKeyDictionaryFramework;
-			productReference = 5D8A5CFB1438DA47003824A8 /* TwoKeyDictionaryFramework.framework */;
+			productReference = 5D1C4E001438DFBF009141FE /* TwoKeyDictionaryFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5D8A5D121438DA47003824A8 /* TwoKeyDictionaryFrameworkTests */ = {
+		5D1C4E171438DFBF009141FE /* TwoKeyDictionaryFrameworkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D8A5D281438DA47003824A8 /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFrameworkTests" */;
+			buildConfigurationList = 5D1C4E2D1438DFBF009141FE /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFrameworkTests" */;
 			buildPhases = (
-				5D8A5D0E1438DA47003824A8 /* Sources */,
-				5D8A5D0F1438DA47003824A8 /* Frameworks */,
-				5D8A5D101438DA47003824A8 /* Resources */,
-				5D8A5D111438DA47003824A8 /* ShellScript */,
+				5D1C4E131438DFBF009141FE /* Sources */,
+				5D1C4E141438DFBF009141FE /* Frameworks */,
+				5D1C4E151438DFBF009141FE /* Resources */,
+				5D1C4E161438DFBF009141FE /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D8A5D181438DA47003824A8 /* PBXTargetDependency */,
+				5D1C4E1D1438DFBF009141FE /* PBXTargetDependency */,
 			);
 			name = TwoKeyDictionaryFrameworkTests;
 			productName = TwoKeyDictionaryFrameworkTests;
-			productReference = 5D8A5D131438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.octest */;
+			productReference = 5D1C4E181438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D8A5CF11438DA47003824A8 /* Project object */ = {
+		5D1C4DF61438DFBF009141FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = HomeForDerangedScientists;
 			};
-			buildConfigurationList = 5D8A5CF41438DA47003824A8 /* Build configuration list for PBXProject "TwoKeyDictionaryFramework" */;
+			buildConfigurationList = 5D1C4DF91438DFBF009141FE /* Build configuration list for PBXProject "TwoKeyDictionaryFramework" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5D8A5CEF1438DA47003824A8;
-			productRefGroup = 5D8A5CFC1438DA47003824A8 /* Products */;
+			mainGroup = 5D1C4DF41438DFBF009141FE;
+			productRefGroup = 5D1C4E011438DFBF009141FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D8A5CFA1438DA47003824A8 /* TwoKeyDictionaryFramework */,
-				5D8A5D121438DA47003824A8 /* TwoKeyDictionaryFrameworkTests */,
+				5D1C4DFF1438DFBF009141FE /* TwoKeyDictionaryFramework */,
+				5D1C4E171438DFBF009141FE /* TwoKeyDictionaryFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5D8A5CF91438DA47003824A8 /* Resources */ = {
+		5D1C4DFE1438DFBF009141FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8A5D091438DA47003824A8 /* InfoPlist.strings in Resources */,
+				5D1C4E0E1438DFBF009141FE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D8A5D101438DA47003824A8 /* Resources */ = {
+		5D1C4E151438DFBF009141FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8A5D1F1438DA47003824A8 /* InfoPlist.strings in Resources */,
+				5D1C4E241438DFBF009141FE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D8A5D111438DA47003824A8 /* ShellScript */ = {
+		5D1C4E161438DFBF009141FE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,45 +268,46 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D8A5CF61438DA47003824A8 /* Sources */ = {
+		5D1C4DFB1438DFBF009141FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8A5D0D1438DA47003824A8 /* TwoKeyDictionaryFramework.m in Sources */,
+				5D171D12143CD0690020BFF8 /* TwoKeyMutableDictionary.m in Sources */,
+				5D171D17143CD2670020BFF8 /* TwoKeyDictionaryFramework.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D8A5D0E1438DA47003824A8 /* Sources */ = {
+		5D1C4E131438DFBF009141FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8A5D221438DA47003824A8 /* TwoKeyDictionaryFrameworkTests.m in Sources */,
+				5D1C4E271438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D8A5D181438DA47003824A8 /* PBXTargetDependency */ = {
+		5D1C4E1D1438DFBF009141FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D8A5CFA1438DA47003824A8 /* TwoKeyDictionaryFramework */;
-			targetProxy = 5D8A5D171438DA47003824A8 /* PBXContainerItemProxy */;
+			target = 5D1C4DFF1438DFBF009141FE /* TwoKeyDictionaryFramework */;
+			targetProxy = 5D1C4E1C1438DFBF009141FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D8A5D071438DA47003824A8 /* InfoPlist.strings */ = {
+		5D1C4E0C1438DFBF009141FE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D8A5D081438DA47003824A8 /* en */,
+				5D1C4E0D1438DFBF009141FE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5D8A5D1D1438DA47003824A8 /* InfoPlist.strings */ = {
+		5D1C4E221438DFBF009141FE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D8A5D1E1438DA47003824A8 /* en */,
+				5D1C4E231438DFBF009141FE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -305,7 +315,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5D8A5D231438DA47003824A8 /* Debug */ = {
+		5D1C4E281438DFBF009141FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +342,7 @@
 			};
 			name = Debug;
 		};
-		5D8A5D241438DA47003824A8 /* Release */ = {
+		5D1C4E291438DFBF009141FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -352,7 +362,7 @@
 			};
 			name = Release;
 		};
-		5D8A5D261438DA47003824A8 /* Debug */ = {
+		5D1C4E2B1438DFBF009141FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -361,12 +371,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwoKeyDictionaryFramework/TwoKeyDictionaryFramework-Prefix.pch";
 				INFOPLIST_FILE = "TwoKeyDictionaryFramework/TwoKeyDictionaryFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		5D8A5D271438DA47003824A8 /* Release */ = {
+		5D1C4E2C1438DFBF009141FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -375,12 +386,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwoKeyDictionaryFramework/TwoKeyDictionaryFramework-Prefix.pch";
 				INFOPLIST_FILE = "TwoKeyDictionaryFramework/TwoKeyDictionaryFramework-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
-		5D8A5D291438DA47003824A8 /* Debug */ = {
+		5D1C4E2E1438DFBF009141FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
@@ -392,7 +404,7 @@
 			};
 			name = Debug;
 		};
-		5D8A5D2A1438DA47003824A8 /* Release */ = {
+		5D1C4E2F1438DFBF009141FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
@@ -407,32 +419,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D8A5CF41438DA47003824A8 /* Build configuration list for PBXProject "TwoKeyDictionaryFramework" */ = {
+		5D1C4DF91438DFBF009141FE /* Build configuration list for PBXProject "TwoKeyDictionaryFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D8A5D231438DA47003824A8 /* Debug */,
-				5D8A5D241438DA47003824A8 /* Release */,
+				5D1C4E281438DFBF009141FE /* Debug */,
+				5D1C4E291438DFBF009141FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D8A5D251438DA47003824A8 /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFramework" */ = {
+		5D1C4E2A1438DFBF009141FE /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D8A5D261438DA47003824A8 /* Debug */,
-				5D8A5D271438DA47003824A8 /* Release */,
+				5D1C4E2B1438DFBF009141FE /* Debug */,
+				5D1C4E2C1438DFBF009141FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		5D8A5D281438DA47003824A8 /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFrameworkTests" */ = {
+		5D1C4E2D1438DFBF009141FE /* Build configuration list for PBXNativeTarget "TwoKeyDictionaryFrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D8A5D291438DA47003824A8 /* Debug */,
-				5D8A5D2A1438DA47003824A8 /* Release */,
+				5D1C4E2E1438DFBF009141FE /* Debug */,
+				5D1C4E2F1438DFBF009141FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5D8A5CF11438DA47003824A8 /* Project object */;
+	rootObject = 5D1C4DF61438DFBF009141FE /* Project object */;
 }
