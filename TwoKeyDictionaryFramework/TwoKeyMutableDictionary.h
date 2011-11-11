@@ -12,6 +12,7 @@
 
 @property(strong) NSMutableDictionary *int_dict;
 
+-(id)initWithDictionary:(TwoKeyMutableDictionary *)data;
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2;
 -(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2;
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2;

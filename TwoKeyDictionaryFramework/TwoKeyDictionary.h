@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TwoKeyMutableDictionary.h"
 
 @interface TwoKeyDictionary : NSObject
 
+-(id)initWithDictionary:(TwoKeyMutableDictionary *)d;
 -(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2;
 -(NSArray *)allValues;
 -(void)removeAllObjects;

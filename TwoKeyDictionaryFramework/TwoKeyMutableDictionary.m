@@ -21,6 +21,15 @@
     return self;
 }
 
+-(id)initWithDictionary:(TwoKeyMutableDictionary *)data
+{
+    self = [super init];
+    if (self) {
+        int_dict = [[NSMutableDictionary alloc] initWithDictionary:data.int_dict];
+    }
+    return self;
+}
+
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2 
 {
     NSMutableDictionary *rowDict = [int_dict objectForKey:key1];

@@ -20,6 +20,8 @@
 		5D1C4E271438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C4E261438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m */; };
 		5D37CE63145CCD98000F01DE /* TwoKeyDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D37CE61145CCD98000F01DE /* TwoKeyDictionary.h */; };
 		5D37CE64145CCD98000F01DE /* TwoKeyDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37CE62145CCD98000F01DE /* TwoKeyDictionary.m */; };
+		5D9F4A33146DA217002F9EFF /* TwoKeyMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F4A2F146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.m */; };
+		5D9F4A3A146DAD19002F9EFF /* TwoKeyDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F4A39146DAD19002F9EFF /* TwoKeyDictionaryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		5D1C4E261438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryFrameworkTests.m; sourceTree = "<group>"; };
 		5D37CE61145CCD98000F01DE /* TwoKeyDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyDictionary.h; sourceTree = "<group>"; };
 		5D37CE62145CCD98000F01DE /* TwoKeyDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionary.m; sourceTree = "<group>"; };
+		5D9F4A2E146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyMutableDictionaryTests.h; sourceTree = "<group>"; };
+		5D9F4A2F146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyMutableDictionaryTests.m; sourceTree = "<group>"; };
+		5D9F4A38146DAD19002F9EFF /* TwoKeyDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyDictionaryTests.h; sourceTree = "<group>"; };
+		5D9F4A39146DAD19002F9EFF /* TwoKeyDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,10 @@
 				5D1C4E251438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.h */,
 				5D1C4E261438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m */,
 				5D1C4E201438DFBF009141FE /* Supporting Files */,
+				5D9F4A2E146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.h */,
+				5D9F4A2F146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.m */,
+				5D9F4A38146DAD19002F9EFF /* TwoKeyDictionaryTests.h */,
+				5D9F4A39146DAD19002F9EFF /* TwoKeyDictionaryTests.m */,
 			);
 			path = TwoKeyDictionaryFrameworkTests;
 			sourceTree = "<group>";
@@ -290,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1C4E271438DFBF009141FE /* TwoKeyDictionaryFrameworkTests.m in Sources */,
+				5D9F4A33146DA217002F9EFF /* TwoKeyMutableDictionaryTests.m in Sources */,
+				5D9F4A3A146DAD19002F9EFF /* TwoKeyDictionaryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

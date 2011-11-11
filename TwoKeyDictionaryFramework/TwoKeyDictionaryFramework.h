@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TwoKeyMutableDictionary.h>
-#import <TwoKeyDictionary.h>
+#import "TwoKeyMutableDictionary.h"
+#import "TwoKeyDictionary.h"
 
 @interface TwoKeyDictionaryFramework : NSObject
 
