@@ -10,7 +10,6 @@
 		5D171D11143CD0690020BFF8 /* TwoKeyMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D171D0D143CD0690020BFF8 /* TwoKeyMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D171D12143CD0690020BFF8 /* TwoKeyMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D171D0E143CD0690020BFF8 /* TwoKeyMutableDictionary.m */; };
 		5D171D16143CD2670020BFF8 /* TwoKeyDictionaryFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D171D14143CD2670020BFF8 /* TwoKeyDictionaryFramework.h */; };
-		5D171D17143CD2670020BFF8 /* TwoKeyDictionaryFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D171D15143CD2670020BFF8 /* TwoKeyDictionaryFramework.m */; };
 		5D1C4E041438DFBF009141FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1C4E031438DFBF009141FE /* Cocoa.framework */; };
 		5D1C4E0E1438DFBF009141FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C4E0C1438DFBF009141FE /* InfoPlist.strings */; };
 		5D1C4E1A1438DFBF009141FE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1C4E191438DFBF009141FE /* SenTestingKit.framework */; };
@@ -38,7 +37,6 @@
 		5D171D0D143CD0690020BFF8 /* TwoKeyMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyMutableDictionary.h; sourceTree = "<group>"; };
 		5D171D0E143CD0690020BFF8 /* TwoKeyMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyMutableDictionary.m; sourceTree = "<group>"; };
 		5D171D14143CD2670020BFF8 /* TwoKeyDictionaryFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyDictionaryFramework.h; sourceTree = "<group>"; };
-		5D171D15143CD2670020BFF8 /* TwoKeyDictionaryFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryFramework.m; sourceTree = "<group>"; };
 		5D1C4E001438DFBF009141FE /* TwoKeyDictionaryFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwoKeyDictionaryFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C4E031438DFBF009141FE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5D1C4E061438DFBF009141FE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -127,7 +125,6 @@
 			children = (
 				5D1C4E0A1438DFBF009141FE /* Supporting Files */,
 				5D171D14143CD2670020BFF8 /* TwoKeyDictionaryFramework.h */,
-				5D171D15143CD2670020BFF8 /* TwoKeyDictionaryFramework.m */,
 				5D171D0D143CD0690020BFF8 /* TwoKeyMutableDictionary.h */,
 				5D171D0E143CD0690020BFF8 /* TwoKeyMutableDictionary.m */,
 				5D37CE61145CCD98000F01DE /* TwoKeyDictionary.h */,
@@ -290,7 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D171D12143CD0690020BFF8 /* TwoKeyMutableDictionary.m in Sources */,
-				5D171D17143CD2670020BFF8 /* TwoKeyDictionaryFramework.m in Sources */,
 				5D37CE64145CCD98000F01DE /* TwoKeyDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

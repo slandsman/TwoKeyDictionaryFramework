@@ -1,8 +1,9 @@
 //
 //  TwoKeyDictionary.m
-//  TwoKeyDictionaryFramework
 //
-//  Created by Seth Landsman on 10/29/11.
+//  Immutable version of a two key dictionary
+//
+//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net> on 10/2/11.
 //  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
 //
 
@@ -12,14 +13,7 @@
 
 TwoKeyMutableDictionary *dict;
 
--(id)init
-{
-    self = [super init];
-    if (self) {
-        dict = [[TwoKeyMutableDictionary alloc] init];
-    }
-    return self;
-}
+#pragma mark - Initialization routines
 
 -(id)initWithDictionary:(TwoKeyMutableDictionary *)d
 {
@@ -30,19 +24,23 @@ TwoKeyMutableDictionary *dict;
     return self;
 }
 
+#pragma mark - Retrieve routines
+
 -(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2
 {
     return [dict objectForKeyOne:key1 andKeyTwo:key2];
 }
+
+#pragma mark - Flattening routines
 
 -(NSArray *)allValues
 {
     return [dict allValues];
 }
 
--(void)removeAllObjects
+-(NSUInteger)count 
 {
-    return [dict removeAllObjects];
+    return [[self allValues] count];
 }
 
 @end

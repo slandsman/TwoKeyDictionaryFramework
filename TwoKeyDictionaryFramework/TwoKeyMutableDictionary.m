@@ -1,8 +1,9 @@
 //
-//  TwoKeyMutableDictionary.m
-//  GameOfLife
+//  TwoKeyMutableDictionary.h
 //
-//  Created by Seth Landsman on 9/10/11.
+//  Mutable varient of a two key indexed dictionary.
+//
+//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net> on 10/2/11.
 //  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
 //
 
@@ -10,7 +11,11 @@
 
 @implementation TwoKeyMutableDictionary
 
+#pragma mark - Properties
+
 @synthesize int_dict;
+
+#pragma mark - Initialization routines
 
 -(id)init
 {
@@ -30,6 +35,8 @@
     return self;
 }
 
+#pragma mark - Set routines
+
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2 
 {
     NSMutableDictionary *rowDict = [int_dict objectForKey:key1];
@@ -39,6 +46,8 @@
     }
     [rowDict setObject:obj forKey:key2];
 }
+
+#pragma mark - Retrieve routines
 
 -(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2
 {
@@ -50,6 +59,8 @@
     return [rowDict objectForKey:key2];
 }
 
+#pragma mark - Remove routines
+
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2
 {
     NSMutableDictionary *rowDict = [int_dict objectForKey:key1];
@@ -58,6 +69,14 @@
     }
 }
 
+#pragma mark - Clear and reset routines
+
+-(void)removeAllObjects
+{
+    [int_dict removeAllObjects];
+}
+
+#pragma mark - Flattening routines
 
 -(NSArray *)allValues
 {
@@ -77,9 +96,5 @@
     return [[self allValues] count];
 }
 
--(void)removeAllObjects
-{
-    [int_dict removeAllObjects];
-}
 
 @end
