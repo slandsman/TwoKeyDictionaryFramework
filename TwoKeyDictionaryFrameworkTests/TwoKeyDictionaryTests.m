@@ -48,6 +48,7 @@ static NSString *DEFAULT_VALUE = @"SampleData";
     
     STAssertNotNil(d, @"Constructor resulted in a nil object");
     NSArray *v = [d allValues];
+    NSLog(@"Size is actually %lu", [v count]);
     STAssertTrue(([v count] == c), @"Copy constructor should result appropriately sized dictionary");
 }
 

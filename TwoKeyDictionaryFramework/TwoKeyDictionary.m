@@ -11,36 +11,11 @@
 
 @implementation TwoKeyDictionary
 
-TwoKeyMutableDictionary *dict;
-
 #pragma mark - Initialization routines
 
 -(id)initWithDictionary:(TwoKeyMutableDictionary *)d
 {
-    self = [super init];
-    if (self) {
-        dict = d;
-    }
-    return self;
-}
-
-#pragma mark - Retrieve routines
-
--(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2
-{
-    return [dict objectForKeyOne:key1 andKeyTwo:key2];
-}
-
-#pragma mark - Flattening routines
-
--(NSArray *)allValues
-{
-    return [dict allValues];
-}
-
--(NSUInteger)count 
-{
-    return [[self allValues] count];
+    return [super initWithDictionary:d];
 }
 
 @end

@@ -8,13 +8,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TwoKeyDictionaryBase.h"
 
-@interface TwoKeyMutableDictionary : NSObject
-
-// internal dictionary definition, which should only be used for
-//  the copy constructor.
-// TODO how can I better hide this property yet still allow a copy constructor to be used?
-@property(strong) NSMutableDictionary *int_dict;
+@interface TwoKeyMutableDictionary : TwoKeyDictionaryBase
 
 // copy constructor for the dictionary
 -(id)initWithDictionary:(TwoKeyMutableDictionary *)data;
@@ -23,22 +19,11 @@
 //  if an entry already exists
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2;
 
-// Retreive the object from the dictionary. Follows the same behavior as
-//  NSMutableDictionary for failed retrievals
--(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2;
-
 // Remove the object from the dictionary. Follows the same behavior as
 //  NSMutableDictionary for failed retrievals
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2;
 
 // Remove all objects from the dictionary
 -(void)removeAllObjects;
-
-// Get a flat array of all values in the dictionary
--(NSArray *)allValues;
-
-// Get a count of number of values in the dictionary. Short cut for
-//  [[dict allValues] count];
--(NSUInteger)count;
 
 @end

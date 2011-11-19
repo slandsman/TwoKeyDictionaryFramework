@@ -11,59 +11,36 @@
 
 @implementation TwoKeyMutableDictionary
 
-#pragma mark - Properties
-
-@synthesize int_dict;
 
 #pragma mark - Initialization routines
 
 -(id)init
 {
-    self = [super init];
-    if (self) {
-        int_dict = [[NSMutableDictionary alloc] init];
-    }
-    return self;
+    return [super init];
 }
 
 -(id)initWithDictionary:(TwoKeyMutableDictionary *)data
 {
-    self = [super init];
-    if (self) {
-        int_dict = [[NSMutableDictionary alloc] initWithDictionary:data.int_dict];
-    }
-    return self;
+    return [super initWithDictionary:data];
 }
 
 #pragma mark - Set routines
 
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2 
-{
-    NSMutableDictionary *rowDict = [int_dict objectForKey:key1];
+{    
+    NSMutableDictionary *rowDict = [[self getBackingData] objectForKey:key1];
     if (rowDict == nil) {
         rowDict = [[NSMutableDictionary alloc] init];
-        [int_dict setObject:rowDict forKey:key1];
+        [[self getBackingData] setObject:rowDict forKey:key1];
     }
     [rowDict setObject:obj forKey:key2];
-}
-
-#pragma mark - Retrieve routines
-
--(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2
-{
-    NSDictionary *rowDict = [int_dict objectForKey:key1];
-    if (rowDict == nil)
-    {
-        return nil;
-    }
-    return [rowDict objectForKey:key2];
 }
 
 #pragma mark - Remove routines
 
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2
 {
-    NSMutableDictionary *rowDict = [int_dict objectForKey:key1];
+    NSMutableDictionary *rowDict = [[self getBackingData] objectForKey:key1];
     if (rowDict != nil) {
         [rowDict removeObjectForKey:key2];
     }
@@ -73,28 +50,7 @@
 
 -(void)removeAllObjects
 {
-    [int_dict removeAllObjects];
+    [[self getBackingData] removeAllObjects];
 }
-
-#pragma mark - Flattening routines
-
--(NSArray *)allValues
-{
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-    NSEnumerator *e = [int_dict objectEnumerator];
-    
-    NSDictionary *rowDict;
-    
-    while ((rowDict = [e nextObject])) {
-        [array addObjectsFromArray:[rowDict allValues]];
-    }
-    return array;
-}
-
--(NSUInteger)count 
-{
-    return [[self allValues] count];
-}
-
 
 @end
