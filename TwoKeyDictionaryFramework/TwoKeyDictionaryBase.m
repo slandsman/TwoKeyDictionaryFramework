@@ -69,7 +69,7 @@
     return [[self allValues] count];
 }
 
-#pragma mark - Private debugging print out
+#pragma mark - Debugging methods
 
 -(void)debug
 {
@@ -81,6 +81,31 @@
         NSLog(@"Got key %@", key);
     }
     NSLog(@"Object at 1,1 is %@", [self objectForKeyOne:[NSNumber numberWithInt:1] andKeyTwo:[NSNumber numberWithInt:1]]);
+}
+
+- (NSString *)description
+{
+    NSString *desc = [NSString stringWithFormat:@"%@:(", [self className]];
+    NSEnumerator *first_key_en = [[self getBackingData] keyEnumerator];
+    NSString *sep = @"";
+    id first_key;
+    while (first_key = [first_key_en nextObject])
+    {
+        NSDictionary *row_dict = [[self getBackingData] objectForKey:first_key];
+        if (row_dict != nil)
+        {
+            NSEnumerator *second_key_en = [row_dict keyEnumerator];
+            id second_key;
+            while (second_key = [second_key_en nextObject])
+            {
+                desc = [desc stringByAppendingFormat:@"%@(%@, %@)=%@", sep, first_key,
+                        second_key, [self objectForKeyOne:first_key andKeyTwo:second_key]];
+                sep = @", ";
+            }
+        }
+    }
+    desc = [desc stringByAppendingString:@")"];
+    return desc;
 }
 
 @end

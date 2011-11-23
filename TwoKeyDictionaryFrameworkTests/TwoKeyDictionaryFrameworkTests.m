@@ -6,6 +6,8 @@
 //
 
 #import "TwoKeyDictionaryFrameworkTests.h"
+#import "TwoKeyDictionary.h"
+#import "TwoKeyMutableDictionary.h"
 
 @implementation TwoKeyDictionaryFrameworkTests
 
@@ -21,6 +23,15 @@
     // Tear-down code here.
     
     [super tearDown];
+}
+
+-(void)testBasicDescriptions
+{
+    TwoKeyMutableDictionary *tkmd = [[TwoKeyMutableDictionary alloc] init];
+    NSLog(@"** Desc is %@", [tkmd description]);
+
+    TwoKeyDictionary *tkd = [[TwoKeyDictionary alloc] init];
+    NSLog(@"** Desc is %@", [tkd description]);
 }
 
 @end
