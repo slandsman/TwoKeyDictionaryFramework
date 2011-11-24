@@ -19,7 +19,7 @@
     return [super init];
 }
 
--(id)initWithDictionary:(TwoKeyMutableDictionary *)data
+-(id)initWithDictionary:(TwoKeyDictionaryBase *)data
 {
     return [super initWithDictionary:data];
 }

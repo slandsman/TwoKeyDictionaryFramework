@@ -13,7 +13,7 @@
 @interface TwoKeyMutableDictionary : TwoKeyDictionaryBase
 
 // copy constructor for the dictionary
--(id)initWithDictionary:(TwoKeyMutableDictionary *)data;
+-(id)initWithDictionary:(TwoKeyDictionaryBase *)data;
 
 // Add an object to the dictionary. Overwrites the existing entry
 //  if an entry already exists

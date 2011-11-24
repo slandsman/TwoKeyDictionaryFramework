@@ -18,4 +18,9 @@
     return [super initWithDictionary:d];
 }
 
+-(TwoKeyMutableDictionary *)mutableCopy
+{
+    return [[TwoKeyMutableDictionary alloc] initWithDictionary:self];
+}
+
 @end

@@ -16,4 +16,7 @@
 // copy constructor for the dictionary
 -(id)initWithDictionary:(TwoKeyMutableDictionary *)d;
 
+// create a cloned mutable copy
+-(TwoKeyMutableDictionary *)mutableCopy;
+
 @end
