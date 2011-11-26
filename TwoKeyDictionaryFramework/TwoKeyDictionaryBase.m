@@ -25,14 +25,14 @@
 {
     self = [super init];
     if (self) {
-        int_dict = [[NSMutableDictionary alloc] initWithDictionary:[d getBackingData]];
+        int_dict = [[NSMutableDictionary alloc] initWithDictionary:[d backingData]];
     }
     return self;
 }
 
 #pragma mark - Data access routines
 
--(NSMutableDictionary *)getBackingData
+-(NSMutableDictionary *)backingData
 {
     return int_dict;
 }
@@ -41,7 +41,7 @@
 
 -(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2
 {
-    NSDictionary *rowDict = [[self getBackingData] objectForKey:key1];
+    NSDictionary *rowDict = [[self backingData] objectForKey:key1];
     if (rowDict == nil)
     {
         return nil;
@@ -74,8 +74,8 @@
 -(void)debug
 {
     NSLog(@"Number of objects is %lu", [self count]);
-    NSLog(@"Number of rows is %lu", [[self getBackingData] count]);
-    NSEnumerator *en = [[[self getBackingData] allKeys] objectEnumerator];
+    NSLog(@"Number of rows is %lu", [[self backingData] count]);
+    NSEnumerator *en = [[[self backingData] allKeys] objectEnumerator];
     id key;
     while (key = [en nextObject]) {
         NSLog(@"Got key %@", key);
@@ -86,12 +86,12 @@
 - (NSString *)description
 {
     NSString *desc = [NSString stringWithFormat:@"%@:(", [self className]];
-    NSEnumerator *first_key_en = [[self getBackingData] keyEnumerator];
+    NSEnumerator *first_key_en = [[self backingData] keyEnumerator];
     NSString *sep = @"";
     id first_key;
     while (first_key = [first_key_en nextObject])
     {
-        NSDictionary *row_dict = [[self getBackingData] objectForKey:first_key];
+        NSDictionary *row_dict = [[self backingData] objectForKey:first_key];
         if (row_dict != nil)
         {
             NSEnumerator *second_key_en = [row_dict keyEnumerator];

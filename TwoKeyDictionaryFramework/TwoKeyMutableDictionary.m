@@ -28,10 +28,10 @@
 
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2 
 {    
-    NSMutableDictionary *rowDict = [[self getBackingData] objectForKey:key1];
+    NSMutableDictionary *rowDict = [[self backingData] objectForKey:key1];
     if (rowDict == nil) {
         rowDict = [[NSMutableDictionary alloc] init];
-        [[self getBackingData] setObject:rowDict forKey:key1];
+        [[self backingData] setObject:rowDict forKey:key1];
     }
     [rowDict setObject:obj forKey:key2];
 }
@@ -40,7 +40,7 @@
 
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2
 {
-    NSMutableDictionary *rowDict = [[self getBackingData] objectForKey:key1];
+    NSMutableDictionary *rowDict = [[self backingData] objectForKey:key1];
     if (rowDict != nil) {
         [rowDict removeObjectForKey:key2];
     }
@@ -50,7 +50,7 @@
 
 -(void)removeAllObjects
 {
-    [[self getBackingData] removeAllObjects];
+    [[self backingData] removeAllObjects];
 }
 
 @end

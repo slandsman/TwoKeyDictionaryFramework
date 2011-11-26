@@ -19,8 +19,7 @@
 -(id)initWithDictionary:(TwoKeyDictionaryBase *)d;
 
 // retrieve the backing data source
-// TODO should be hidden?
--(NSMutableDictionary *)getBackingData;
+-(NSMutableDictionary *)backingData;
 
 // Retreive the object from the dictionary. Follows the same behavior as
 //  NSMutableDictionary for failed retrievals
