@@ -122,6 +122,27 @@ static NSString *DEFAULT_VALUE = @"SampleData";
     STAssertTrue((value == v), @"Value retrieved is not as expected");
 }
 
+#pragma mark - Test regression cases
+
+// Test the case where creating a second TKD in the same scope overwrote the internal backing data of the
+//  original TKD. Basically, the internal data store was being treated as a static member
+-(void)testBackingDataStoreShouldNotBeStatic
+{
+    int c = 10;
+    TwoKeyMutableDictionary *i = [self buildSampleOfSize:c];
+    STAssertTrue(([[i allValues] count] == c), @"Count should be %i", c);
+    NSString *value = [i objectForKeyOne:[NSNumber numberWithInt:8] andKeyTwo:[NSNumber numberWithInt:8]];
+    STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
+    
+    TwoKeyMutableDictionary *d = [[TwoKeyMutableDictionary alloc] init];
+    [d removeAllObjects];
+    STAssertTrue(([[d allValues] count] == 0), @"Count should be %i", c);
+    
+    STAssertTrue(([[i allValues] count] == c), @"Count should be %i", c);
+    value = [i objectForKeyOne:[NSNumber numberWithInt:8] andKeyTwo:[NSNumber numberWithInt:8]];
+    STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
+}
+
 #pragma mark - Test support methods
 
 // Create a sample mutable dictionary of a known size with DEFAULT_VALUE populated values
