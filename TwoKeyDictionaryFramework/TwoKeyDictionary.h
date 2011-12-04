@@ -1,11 +1,12 @@
-//
-//  TwoKeyDictionary.h
-//
-//  Immutable version of a two key dictionary
-//
-//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net> on 10/2/11.
-//  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
-//
+/**
+ TwoKeyDictionary.h
+ 
+ Immutable version of a two key dictionary
+ 
+ @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
+ @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
+ 
+ */
 
 #import <Foundation/Foundation.h>
 #import "TwoKeyDictionaryBase.h"
@@ -13,10 +14,19 @@
 
 @interface TwoKeyDictionary : TwoKeyDictionaryBase
 
-// copy constructor for the dictionary
--(id)initWithDictionary:(TwoKeyMutableDictionary *)d;
+/** 
+ copy constructor for the dictionary
+ 
+ @param data Another two key dictionary
+ */
+-(id)initWithDictionary:(TwoKeyMutableDictionary *)data;
 
-// create a cloned mutable copy
+/**
+ Clone the dictioanry into a mutable copy
+ 
+ @returns a mutable instance of a two key dictionary with data shallowly copied from the original
+ 
+ */
 -(TwoKeyMutableDictionary *)mutableCopy;
 
 @end

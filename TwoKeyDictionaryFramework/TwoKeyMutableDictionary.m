@@ -1,11 +1,12 @@
-//
-//  TwoKeyMutableDictionary.h
-//
-//  Mutable varient of a two key indexed dictionary.
-//
-//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net> on 10/2/11.
-//  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
-//
+/**
+ TwoKeyMutableDictionary.h
+ 
+ Mutable varient of a two key indexed dictionary.
+ 
+ @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
+ @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
+ 
+ */
 
 #import "TwoKeyMutableDictionary.h"
 
