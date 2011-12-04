@@ -21,6 +21,7 @@
 		5D37CE64145CCD98000F01DE /* TwoKeyDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37CE62145CCD98000F01DE /* TwoKeyDictionary.m */; };
 		5D553D9B1478273B005CC0CF /* TwoKeyDictionaryBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D553D991478273A005CC0CF /* TwoKeyDictionaryBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D553D9C1478273B005CC0CF /* TwoKeyDictionaryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D553D9A1478273A005CC0CF /* TwoKeyDictionaryBase.m */; };
+		5D6A18AE148BFDCD00468F9C /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D6A18AD148BFDCD00468F9C /* Doxyfile */; };
 		5D9F4A33146DA217002F9EFF /* TwoKeyMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F4A2F146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.m */; };
 		5D9F4A3A146DAD19002F9EFF /* TwoKeyDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9F4A39146DAD19002F9EFF /* TwoKeyDictionaryTests.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		5D37CE62145CCD98000F01DE /* TwoKeyDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionary.m; sourceTree = "<group>"; };
 		5D553D991478273A005CC0CF /* TwoKeyDictionaryBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyDictionaryBase.h; sourceTree = "<group>"; };
 		5D553D9A1478273A005CC0CF /* TwoKeyDictionaryBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyDictionaryBase.m; sourceTree = "<group>"; };
+		5D6A18AD148BFDCD00468F9C /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
 		5D7F12D1147068A0007477C8 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5D9F4A2E146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoKeyMutableDictionaryTests.h; sourceTree = "<group>"; };
 		5D9F4A2F146DA0B3002F9EFF /* TwoKeyMutableDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoKeyMutableDictionaryTests.m; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				5D1C4E1F1438DFBF009141FE /* TwoKeyDictionaryFrameworkTests */,
 				5D1C4E021438DFBF009141FE /* Frameworks */,
 				5D1C4E011438DFBF009141FE /* Products */,
+				5D6A18AD148BFDCD00468F9C /* Doxyfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,6 +202,7 @@
 				5D1C4DFC1438DFBF009141FE /* Frameworks */,
 				5D1C4DFD1438DFBF009141FE /* Headers */,
 				5D1C4DFE1438DFBF009141FE /* Resources */,
+				5D97FE37148AADAB00C59847 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -261,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1C4E0E1438DFBF009141FE /* InfoPlist.strings in Resources */,
+				5D6A18AE148BFDCD00468F9C /* Doxyfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +292,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		5D97FE37148AADAB00C59847 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# Build the doxygen documentation for the project and load the docset into Xcode \n#\n# Created by Fred McCann on 03/16/2010.\n# Last updated 10/26/2010.\n# http://www.duckrowing.com\n#\n# Based on the build script provided by Apple:\n# http://developer.apple.com/tools/creatingdocsetswithdoxygen.html\n#\n# Set the variable $COMPANY_RDOMAIN_PREFIX equal to the reverse domain name of your comany\n# Example: com.duckrowing\n#\n\nCOMPANY_RDOMAIN_PREFIX=\"net.homeforderangedscientists\"\nDOXYGEN_PATH=\"/usr/local/bin/doxygen\"\nDOCSET_PATH=\"$SOURCE_ROOT/$PRODUCT_NAME.docset\"\n\n#if ! [ -f \\\"$SOURCE_ROOT/Doxyfile\\\" ] \n#then \n#echo doxygen config file does not exist in $SOURCE_ROOT\n#$DOXYGEN_PATH -g \"$SOURCE_ROOT/Doxyfile\"\n#fi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp \"$SOURCE_ROOT/Doxyfile\" \"$TEMP_DIR/Doxyfile\"\n\necho \"INPUT = \\\"$SOURCE_ROOT\\\"\" >> \"$TEMP_DIR/Doxyfile\"\necho \"OUTPUT_DIRECTORY = \\\"$DOCSET_PATH\\\"\" >> \"$TEMP_DIR/Doxyfile\"\necho \"RECURSIVE = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"EXTRACT_ALL        = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"JAVADOC_AUTOBRIEF        = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"GENERATE_LATEX        = NO\" >> \"$TEMP_DIR/Doxyfile\"\necho \"GENERATE_DOCSET        = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"DOCSET_FEEDNAME = $PRODUCT_NAME Documentation\" >> \"$TEMP_DIR/Doxyfile\"\necho \"DOCSET_BUNDLE_ID       = $COMPANY_RDOMAIN_PREFIX.$PRODUCT_NAME\" >> \"$TEMP_DIR/Doxyfile\"\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH \"$TEMP_DIR/Doxyfile\"\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C \"$DOCSET_PATH/html\" install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f \"$TEMP_DIR/loadDocSet.scpt\"\n\necho \"tell application \\\"Xcode\\\"\" >> \"$TEMP_DIR/loadDocSet.scpt\"\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/$COMPANY_RDOMAIN_PREFIX.$PRODUCT_NAME.docset\\\"\" >> \"$TEMP_DIR/loadDocSet.scpt\"\necho \"end tell\" >> \"$TEMP_DIR/loadDocSet.scpt\"\n\n#  Run the load-docset applescript command.\nosascript \"$TEMP_DIR/loadDocSet.scpt\"\n\nexit 0\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -391,6 +410,7 @@
 		5D1C4E2B1438DFBF009141FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DOXYGEN_PATH = /usr/local/bin/doxygen;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -406,6 +426,7 @@
 		5D1C4E2C1438DFBF009141FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DOXYGEN_PATH = /usr/local/bin/doxygen;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;

@@ -1,10 +1,11 @@
-//
-//  TwoKeyDictionaryBase.m
-//  TwoKeyDictionaryFramework
-//
-//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net> on 10/2/11.
-//  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
-//
+/**
+ TwoKeyDictionaryBase.m
+ 
+ Abstract base class for Two Key dictionaries
+ 
+ @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
+ @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
+*/
 
 #import "TwoKeyDictionaryBase.h"
 

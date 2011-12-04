@@ -12,18 +12,18 @@
 
 @interface TwoKeyMutableDictionary : TwoKeyDictionaryBase
 
-// copy constructor for the dictionary
+/** copy constructor for the dictionary */
 -(id)initWithDictionary:(TwoKeyDictionaryBase *)data;
 
-// Add an object to the dictionary. Overwrites the existing entry
-//  if an entry already exists
+/** Add an object to the dictionary. Overwrites the existing entry
+  if an entry already exists */
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2;
 
-// Remove the object from the dictionary. Follows the same behavior as
-//  NSMutableDictionary for failed retrievals
+/** Remove the object from the dictionary. Follows the same behavior as
+ NSMutableDictionary for failed retrievals */
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2;
 
-// Remove all objects from the dictionary
+/** Remove all objects from the dictionary */
 -(void)removeAllObjects;
 
 @end

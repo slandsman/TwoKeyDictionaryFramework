@@ -1,35 +1,61 @@
-//
-//  TwoKeyDictionaryBase.h
-//
-//  Abstract base class for Two Key dictionaries
-//
-//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net> on 10/2/11.
-//  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
-//
+/**
+  TwoKeyDictionaryBase.h
+
+  Abstract base class for Two Key dictionaries
+
+  @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
+  @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
+
+*/
 
 #import <Foundation/Foundation.h>
 
 @interface TwoKeyDictionaryBase : NSObject
 {
-    // instance variable containing the backing store
+    /** instance variable containing the backing store */
     NSMutableDictionary *int_dict;
 }
 
-// copy constructor for the dictionary
+/** 
+ copy constructor for the dictionary
+ 
+ @param d Another two key dictionary
+*/
 -(id)initWithDictionary:(TwoKeyDictionaryBase *)d;
 
-// retrieve the backing data source
+/**
+ retrieve the backing data source
+ 
+ @returns an NSMutableDictionary representing the internal data structure
+*/
 -(NSMutableDictionary *)backingData;
 
-// Retreive the object from the dictionary. Follows the same behavior as
-//  NSMutableDictionary for failed retrievals
+/** 
+ Retreive the object from the dictionary. Follows the same behavior as
+    NSMutableDictionary for failed retrievals
+ 
+ @see NSDictionary
+ @param key1 the first key value
+ @param key2 the second key value
+ @returns the object (as an id) returned from the internal store. Follows the same behavior as NSDictionary
+*/
 -(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2;
 
-// Get a flat array of all values in the dictionary
+/**
+ Get a flat array of all values in the dictionary
+ 
+ @returns the dictionary flattened as an array of id values
+*/
 -(NSArray *)allValues;
 
-// Get a count of number of values in the dictionary. Short cut for
-//  [[dict allValues] count];
+/**
+ Get a count of number of values in the dictionary. Short cut for
+    [[dict allValues] count];
+ 
+ @see NSDictionary#count
+ 
+ @returns the equivlient of [[dict allValues] count];
+*/
 -(NSUInteger)count;
 
 @end
