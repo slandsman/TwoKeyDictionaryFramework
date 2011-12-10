@@ -36,7 +36,7 @@
  @param key1 the first key value
  @param key2 the second key value
  */
--(void)setObject:(id)obj forIntegerKeyOne:(int)key1 andKeyTwo:(int)key2;
+-(void)setObject:(id)obj forIndexOne:(int)key1 andIndexTwo:(int)key2;
 
 /** Remove the object from the dictionary. Follows the same behavior as
  NSMutableDictionary for failed retrievals 
@@ -54,7 +54,7 @@
  @param key2 the second key value
  
  */
--(void)removeObjectForIntegerKeyOne:(int)key1 andKeyTwo:(int)key2;
+-(void)removeObjectForIndexOne:(int)key1 andIndexTwo:(int)key2;
 
 /** Remove all objects from the dictionary */
 -(void)removeAllObjects;

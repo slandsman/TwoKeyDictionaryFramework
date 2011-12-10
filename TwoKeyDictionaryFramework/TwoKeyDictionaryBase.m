@@ -50,7 +50,7 @@
     return [rowDict objectForKey:key2];
 }
 
--(id)objectForIntegerKeyOne:(int)key1 andKeyTwo:(int)key2
+-(id)objectForIndexOne:(int)key1 andIndexTwo:(int)key2
 {
     NSNumber *k1 = [[NSNumber alloc] initWithInt:key1];
     NSNumber *k2 = [[NSNumber alloc] initWithInt:key2];

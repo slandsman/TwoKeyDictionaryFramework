@@ -52,7 +52,7 @@
  @param key2 the second key value
  @returns the object (as an id) returned from the internal store. Follows the same behavior as NSDictionary
  */
--(id)objectForIntegerKeyOne:(int)key1 andKeyTwo:(int)key2;
+-(id)objectForIndexOne:(int)key1 andIndexTwo:(int)key2;
 
 /**
  Get a flat array of all values in the dictionary

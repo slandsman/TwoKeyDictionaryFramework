@@ -81,10 +81,10 @@ static NSString *DEFAULT_VALUE = @"SampleData";
 {
     int c = 10;
     TwoKeyMutableDictionary *i = [self buildSampleOfSize:c];
-    NSString *value = [i objectForIntegerKeyOne:5 andKeyTwo:5];
+    NSString *value = [i objectForIndexOne:5 andIndexTwo:5];
     STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
     
-    value = [i objectForIntegerKeyOne:8 andKeyTwo:8];
+    value = [i objectForIndexOne:8 andIndexTwo:8];
     STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
 }
 
@@ -117,16 +117,16 @@ static NSString *DEFAULT_VALUE = @"SampleData";
 {
     int c = 10;
     TwoKeyMutableDictionary *i = [self buildSampleOfSize:c];
-    NSString *value = [i objectForIntegerKeyOne:5 andKeyTwo:5];
+    NSString *value = [i objectForIndexOne:5 andIndexTwo:5];
     STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
     STAssertTrue(([[i allValues] count] == c), @"Count should be %i", c);
     
-    [i removeObjectForIntegerKeyOne:5 andKeyTwo:5];
+    [i removeObjectForIndexOne:5 andIndexTwo:5];
     
-    value = [i objectForIntegerKeyOne:5 andKeyTwo:5];
+    value = [i objectForIndexOne:5 andIndexTwo:5];
     STAssertNil(value, @"Removed value should be nil");
     
-    value = [i objectForIntegerKeyOne:8 andKeyTwo:8];
+    value = [i objectForIndexOne:8 andIndexTwo:8];
     STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
     
     STAssertTrue(([[i allValues] count] == c-1), @"Count should be %i", c);
