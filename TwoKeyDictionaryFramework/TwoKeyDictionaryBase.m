@@ -50,6 +50,14 @@
     return [rowDict objectForKey:key2];
 }
 
+-(id)objectForIntegerKeyOne:(int)key1 andKeyTwo:(int)key2
+{
+    NSNumber *k1 = [[NSNumber alloc] initWithInt:key1];
+    NSNumber *k2 = [[NSNumber alloc] initWithInt:key2];
+    
+    return [self objectForKeyOne:k1 andKeyTwo:k2];
+}
+
 #pragma mark - Flattening routines
 
 -(NSArray *)allValues

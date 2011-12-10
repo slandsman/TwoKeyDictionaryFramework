@@ -29,6 +29,15 @@
  */
 -(void)setObject:(id)obj forKeyOne:(id)key1 andKeyTwo:(id)key2;
 
+/** Add an object to the dictionary that is keyed by two integers. 
+ Overwrites the existing entry if an entry already exists 
+ 
+ @param obj the object to store in the dictionary
+ @param key1 the first key value
+ @param key2 the second key value
+ */
+-(void)setObject:(id)obj forIntegerKeyOne:(int)key1 andKeyTwo:(int)key2;
+
 /** Remove the object from the dictionary. Follows the same behavior as
  NSMutableDictionary for failed retrievals 
  
@@ -37,6 +46,15 @@
 
  */
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2;
+
+/** Remove the object keyed by two integers from the dictionary. 
+ Follows the same behavior as NSMutableDictionary for failed retrievals 
+ 
+ @param key1 the first key value
+ @param key2 the second key value
+ 
+ */
+-(void)removeObjectForIntegerKeyOne:(int)key1 andKeyTwo:(int)key2;
 
 /** Remove all objects from the dictionary */
 -(void)removeAllObjects;

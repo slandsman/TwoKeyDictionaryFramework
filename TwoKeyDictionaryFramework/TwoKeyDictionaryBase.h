@@ -41,6 +41,19 @@
 */
 -(id)objectForKeyOne:(id)key1 andKeyTwo:(id)key2;
 
+/** 
+ Retreive the object from the dictionary with integer based keys. Follows the same behavior as
+ NSMutableDictionary for failed retrievals
+ 
+ Underlying implementation boxes the integer values to NSNumbers
+ 
+ @see NSDictionary, NSNumber
+ @param key1 the first key value
+ @param key2 the second key value
+ @returns the object (as an id) returned from the internal store. Follows the same behavior as NSDictionary
+ */
+-(id)objectForIntegerKeyOne:(int)key1 andKeyTwo:(int)key2;
+
 /**
  Get a flat array of all values in the dictionary
  

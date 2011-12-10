@@ -1,7 +1,7 @@
 /**
  TwoKeyMutableDictionary.h
  
- Mutable varient of a two key indexed dictionary.
+ Mutable variant of a two key indexed dictionary.
  
  @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
  @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
@@ -37,6 +37,13 @@
     [rowDict setObject:obj forKey:key2];
 }
 
+-(void)setObject:(id)obj forIntegerKeyOne:(int)key1 andKeyTwo:(int)key2 
+{
+    NSNumber *k1 = [[NSNumber alloc] initWithInt:key1];
+    NSNumber *k2 = [[NSNumber alloc] initWithInt:key2];
+    [self setObject:obj forKeyOne:k1 andKeyTwo:k2];
+}
+
 #pragma mark - Remove routines
 
 -(void)removeObjectForKeyOne:(id)key1 andKeyTwo:(id)key2
@@ -45,6 +52,14 @@
     if (rowDict != nil) {
         [rowDict removeObjectForKey:key2];
     }
+}
+
+-(void)removeObjectForIntegerKeyOne:(int)key1 andKeyTwo:(int)key2
+{
+    NSNumber *k1 = [[NSNumber alloc] initWithInt:key1];
+    NSNumber *k2 = [[NSNumber alloc] initWithInt:key2];
+
+    [self removeObjectForKeyOne:k1 andKeyTwo:k2];
 }
 
 #pragma mark - Clear and reset routines

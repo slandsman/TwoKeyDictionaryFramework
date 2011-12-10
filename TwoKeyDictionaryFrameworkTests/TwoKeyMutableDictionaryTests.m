@@ -76,6 +76,18 @@ static NSString *DEFAULT_VALUE = @"SampleData";
     STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
 }
 
+// test retrieval where using the boxed int variant, ensure that we can get sample values out of a known dictionary
+-(void)testBoxedRetrieval
+{
+    int c = 10;
+    TwoKeyMutableDictionary *i = [self buildSampleOfSize:c];
+    NSString *value = [i objectForIntegerKeyOne:5 andKeyTwo:5];
+    STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
+    
+    value = [i objectForIntegerKeyOne:8 andKeyTwo:8];
+    STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
+}
+
 #pragma mark - Test delete
 
 // test delete, ensure that removing a known value from a dictionary results in a valid dictionary, of
@@ -99,9 +111,30 @@ static NSString *DEFAULT_VALUE = @"SampleData";
     STAssertTrue(([[i allValues] count] == c-1), @"Count should be %i", c);
 }
 
+// test delete, ensure that removing a known value from a dictionary results in a valid dictionary, of
+//  expected size, with the deleted object removed.
+-(void)testBoxedDelete
+{
+    int c = 10;
+    TwoKeyMutableDictionary *i = [self buildSampleOfSize:c];
+    NSString *value = [i objectForIntegerKeyOne:5 andKeyTwo:5];
+    STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
+    STAssertTrue(([[i allValues] count] == c), @"Count should be %i", c);
+    
+    [i removeObjectForIntegerKeyOne:5 andKeyTwo:5];
+    
+    value = [i objectForIntegerKeyOne:5 andKeyTwo:5];
+    STAssertNil(value, @"Removed value should be nil");
+    
+    value = [i objectForIntegerKeyOne:8 andKeyTwo:8];
+    STAssertTrue((value == DEFAULT_VALUE), @"Value retrieved is not as expected");
+    
+    STAssertTrue(([[i allValues] count] == c-1), @"Count should be %i", c);
+}
+
 #pragma mark - Test put
 
-// test put, ensure that adding a new object to the dictionary results in a valid dictionary, of 
+// test int boxed put, ensure that adding a new object to the dictionary results in a valid dictionary, of 
 //  expected size, with the new object added
 -(void)testPut
 {
