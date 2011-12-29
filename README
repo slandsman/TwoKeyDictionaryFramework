@@ -1,7 +1,3 @@
 Dictionary that uses two keys for indexing objects.
 
-TODO
- - DocSet
- - Memory leak testing
- - Finalize headers
- - Docset generation scripts 
+LICENSED under MIT/X11 (see LICENSE)
